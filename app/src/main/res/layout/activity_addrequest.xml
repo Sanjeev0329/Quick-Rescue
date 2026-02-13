@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Addrequest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/routinfo"
+        android:layout_height="200dp"
+        android:background="#E8EAF6">
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvname"/>
+        <TextView
+            android:layout_below="@+id/tvname"
+            android:layout_marginLeft="10dp"
+            android:text="Mobile: "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvmobile"/>
+        <TextView
+            android:layout_below="@+id/tvmobile"
+            android:layout_marginLeft="10dp"
+            android:text="Email: "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvemail"/>
+        <TextView
+            android:layout_below="@+id/tvemail"
+            android:layout_marginLeft="10dp"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvaddre"/>
+        <TextView
+            android:layout_below="@+id/tvaddre"
+            android:layout_marginLeft="10dp"
+            android:text="Services offer: "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvservices"/>
+    </RelativeLayout>
+
+
+    <Spinner
+        android:id="@+id/services"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/routinfo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="5dp"
+        android:id="@+id/toutaddinfo"
+        android:layout_below="@+id/services"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Additional Info"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:lines="10"
+            android:id="@+id/addinfo"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/toutaddinfo"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/btnsubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+</RelativeLayout>

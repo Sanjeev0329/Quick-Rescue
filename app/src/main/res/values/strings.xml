@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ON ROAD FUEL AND SERVICING DEMAND</string>
+    <string name="profile"><u>profile</u></string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvwservccat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:textColor="@color/black"
+        android:id="@+id/tvwcustname"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvwservccat"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvwcustname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Mobile"
+        android:textColor="@color/black"
+        android:id="@+id/tvwcustmob"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Request"
+        android:textColor="@color/black"
+        android:id="@+id/tvwservccat"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvwcustmob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add info"
+        android:textColor="@color/black"
+        android:id="@+id/tvwaddinfo"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvwaddinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textColor="@color/black"
+        android:id="@+id/tvwstatus"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/routbtns"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        >
+
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btncnfrmrequest"
+            android:layout_marginRight="10dp"
+            android:text="Confirm Request"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/black"
+            android:id="@+id/btnnotavil"
+            android:text="Not available now"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:id="@+id/imgphone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/phone"/>
+
+        <ImageView
+            android:id="@+id/imglocation"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/location"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btncompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_margin="10dp"
+            android:stepSize="0.1"
+            android:rating="0.0"/>
+
+
+        <TextView
+            android:id="@+id/tvfeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

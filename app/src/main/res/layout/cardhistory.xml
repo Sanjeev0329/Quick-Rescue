@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvservcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Service type"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvservcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service category"
+            android:textColor="@color/black"
+            android:id="@+id/tvservccat"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvservccat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:id="@+id/tvhistworkname"/>
+
+        <TextView
+            android:id="@+id/tvworkmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Mobile"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvhiststaus"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_below="@id/tvhistworkname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Status"
+            android:textColor="#03A9F4"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/imgphone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phone"
+            android:padding="5dp"
+            android:layout_gravity="right"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:id="@+id/btnfeedback"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
